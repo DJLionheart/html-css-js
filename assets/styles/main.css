@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow|Julius+Sans+One|Source+Sans+Pro');
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+
+/* h1, h2 {
+    text-align: center;
+} */
+
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 62pt;
+
+}
+
+h2 {
+    font-family: 'Archivo Narrow', sans-serrif;
+    font-size: 24pt;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 150px;
+    background: linear-gradient(blue, rgb(0, 98, 255), rgb(0, 162, 255));
+    height: 150px;
+}
+
+header h1, h2 {
+    font-weight: 600;
+}
+
+nav {
+    top: 0;
+    position: fixed;
+    width: 150px;
+    background-color: rgb(63, 62, 62);
+    height: 100vh;
+    float: left;
+}
+
+li {
+    text-align: center;
+    padding: 40px 0 0 0;
+    
+    
+}
+
+li:hover {
+    background-color: rgb(116, 116, 116);
+}
+.nav-logo {
+    height: 100px;
+    width: 100px;
+    margin: 25px 0 0 25px;
+    background-image: url('../images/overview/ffxv.jpg');
+    background-size: cover;
+    border-radius: 5px;
+}
+
+
+main {
+    padding-left: 150px;
+    padding-top: 20px;
+    line-height: 2rem;
+    background-color: rgb(0, 81, 255);
+    width: calc(100vw - 150px);
+}
+
+main > h1 {
+    font-size: 30pt;
+}
+
+main > h2 {
+    font-size: 20pt;
+}
+
+
+section > p {
+    text-indent: 2em;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-size: 16pt;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+.pic-box {
+    border: 1px solid lightgrey;
+    box-shadow: rgb(255, 255, 255) 3px 3px 30px;
+    position: sticky;
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#noctis {
+    background-image: url('../images/overview/noctis.jpg');
+}
+
+#gladio {
+    background-image: url('../images/overview/gladio.jpg');
+}
+
+#ignis {
+    background-image: url('../images/overview/ignis.jpg');
+}
+
+#prompto {
+    background-image: url('../images/overview/prompto.jpg');
+}
+
+.overview-pics {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
