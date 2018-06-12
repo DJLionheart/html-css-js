@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="title" content="Final Fantasy XV Fan Page">
+    <meta name="description" content="a site dedicated to how awesome FFXV is">
+    <meta name="keywords" content="Final, Fantasy, XV, SquareEnix, FFXV">
+
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/main.css">
     <title>FFXV</title>
 </head>
 <body>
+<a name="Overview"></a>
     <header>
         <h1>Final Fantasy XV:</h1>
         <h2>Just another Open-World RPG?</h2>
@@ -16,11 +20,9 @@
     <nav>
         <div class="nav-logo"></div>
         <ul>
-            <li>Overview</li>
-            <li>Gameplay</li>
-            <li>Screenshots</li>
-            <li>Soundtrack</li>
-            <li>Trailer</li>
+            <a href="#Overview"><li>Overview</li></a>
+            <a href="#Gameplay"><li>Gameplay</li></a>
+            <a href="#Updates"><li>Updates</li></a>
             <li><a href="https://www.finalfantasyxv.com/" target="_blank">Official Website</a></li>
         </ul>
     </nav>
@@ -31,8 +33,10 @@
             <div class="pic-box" id="noctis"></div>
             <div class="pic-box" id="gladio"></div>
         </span>
-        <h1>Overview</h1>
-        <h2>Why You Should Give it a Try</h2>
+        <span class="section-head">
+            <h1>Overview</h1>
+            <h2>Why You Should Give it a Try</h2>
+        </span>
         <section>
             <p>Final Fantasy XV (or FFXV for short) takes the best of open-world gameplay and blends it with the Fantasy/SciFi mastery the world has come to expect from producer Square Enix. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non commodo ante, imperdiet congue purus. Donec cursus tortor sed arcu sagittis auctor a sit amet sapien. Nam in metus ut enim aliquet faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; </p>
             
@@ -42,5 +46,48 @@
             Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam facilisis varius dolor vulputate gravida. Donec libero purus, porttitor pretium venenatis imperdiet, pretium dapibus quam. Duis aliquam vehicula arcu, nec ornare metus pellentesque ac. Quisque tempor eget eros id auctor. Etiam convallis, eros in fermentum tristique, mi magna elementum libero, quis varius justo augue id sem. Nunc a purus vel quam varius congue et a quam. Nulla interdum bibendum mollis.
             </p>
         </section>
+        <br>
+        <a name="Gameplay"><hr></a>
+        <section>
+            <span class="section-head">
+                    <h1>Gameplay</h1>
+                <h2>Goodbye ATB, Hello Weapon Warp!</h2>
+            </span>
+            <div class="img-container">
+                <img src="./assets/images/gameplay/ffxv-gameplay.jpg" alt="ffxv gameplay" id="gameplay-pic">
+            </div>
+                <p>
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam facilisis varius dolor vulputate gravida. Donec libero purus, porttitor pretium venenatis imperdiet, pretium dapibus quam. Duis aliquam vehicula arcu, nec ornare metus pellentesque ac. Quisque tempor eget eros id auctor. Etiam convallis, eros in fermentum tristique, mi magna elementum libero, quis varius justo augue id sem. Nunc a purus vel quam varius congue et a quam. Nulla interdum bibendum mollis.
+                </p>
+                <p>
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam facilisis varius dolor vulputate gravida. Donec libero purus, porttitor pretium venenatis imperdiet, pretium dapibus quam. Duis aliquam vehicula arcu, nec ornare metus pellentesque ac. Quisque tempor eget eros id auctor. Etiam convallis, eros in fermentum tristique, mi magna elementum libero, quis varius justo augue id sem. Nunc a purus vel quam varius congue et a quam. Nulla interdum bibendum mollis.
+                </p>
+        </section>
+        <br>
+        <hr>
+        <section>
+                <a name="Updates"></a>
+            <span class="section-head">
+                <h1>Updates</h1>
+                <h2>Subscribe to keep in-the-loop!</h2>
+                <p>
+                    Would you like to hear all the great FFXV news without having to search for it? Subscribe below and your days of scouring the web for information hot off the press are over! We'll keep you informed about when those next cool features get installed, or the next DLC packages drop!
+                </p>
+            </span>
+            <div id="input-box">
+                <label >Email:</label>
+                <input type="email" id="updates" value="">
+                <label>Cell:</label>
+                <input disabled="true"/ id="cell">
+                <button id="subscribe-btn" onClick="subscribe();">Subscribe</button>
+            </div>
+            <img src="https://img00.deviantart.net/f7c4/i/2017/013/0/4/ffxv_brothers_by_merwild-davary6.png" alt="ffxv brothers">
+            
+            <p>
+            
+            </p>
+        </section>
     </main>
+    <script src="main.js"></script>
+</body>
 </html>
